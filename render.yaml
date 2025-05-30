@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: elster-export
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    autoDeploy: false        # erst deployen, wenn du’s willst
